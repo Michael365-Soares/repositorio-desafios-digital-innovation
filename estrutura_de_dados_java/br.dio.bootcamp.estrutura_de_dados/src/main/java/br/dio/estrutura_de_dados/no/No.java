@@ -1,24 +1,24 @@
 package br.dio.estrutura_de_dados.no;
 
-public class No {
-     private String conteudo;
-     private No no;
+public class No<T> {
+     private T conteudo;
+     private No<T> elemento;
      
-	public No(String conteudo) {
-		this.no=null;
+	public No(T conteudo) {
+		this.elemento=null;
 		this.conteudo = conteudo;
 	}
 
-	public void setConteudo(String conteudo) {
-		this.conteudo = conteudo;
+	public void setConteudo(T conteudo) {
+		this.conteudo =conteudo;
 	}
 
-	public No getProximoNo() {
-		return no;
+	public No<T> getProximoNo() {
+		return elemento;
 	}
 
-	public void setNo(No no) {
-		this.no = no;
+	public void setNo(No<T> no) {
+		this.elemento = no;
 	}
 
 	@Override
