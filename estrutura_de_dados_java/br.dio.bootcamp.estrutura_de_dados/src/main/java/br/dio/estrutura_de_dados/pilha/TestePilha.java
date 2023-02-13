@@ -15,6 +15,7 @@ public class TestePilha {
 	  pilha.push(no4);
 	  pilha.push(no5);
 	  pilha.push(no6);
+	  System.out.println("Valor do primeiro nó da pilha: "+pilha.top());
 //	  System.out.println(pilha.pop());
 //	  System.out.println(pilha.pop());
 //	  System.out.println(pilha.pop());
@@ -24,5 +25,9 @@ public class TestePilha {
 	  System.out.println(pilha.isEmpty());
 	  System.out.println("========================");
 	  System.out.println(pilha);
+	  pilha.pop();
+	  System.out.println("========================");
+	  System.out.println(pilha);
+	  
    }
 }
