@@ -1,4 +1,4 @@
-package br.dio.bootcamp.estrutura_de_dados_passagem_por_referencia;
+package br.dio.estrutura_de_dados.passagem_por_referencia;
 
 public class PassagemDeValoresPorReferencia {
     public static void main( String[] args ){
