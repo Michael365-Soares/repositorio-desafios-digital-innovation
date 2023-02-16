@@ -24,7 +24,7 @@ public class TestaListaEncadeada {
 		 lista.add(no9,1);
 	     System.out.println(lista);
 		 System.out.println(lista.size());
-	     System.out.println(lista.get(5));
+	     System.out.println(lista.get(7));
 		 lista.remove(4);
 		 lista.remove(5);
 		 lista.remove(9);
