@@ -12,5 +12,8 @@ public class TestaListaCircular {
 		  System.out.println(lista);
 		  lista.remove(2);
 		  System.out.println(lista);
+		 for(int i=0;i<20;i++) {
+			 System.out.println(lista.get(i));
+		 }
 	 }
 }
