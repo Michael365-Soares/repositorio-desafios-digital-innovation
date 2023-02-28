@@ -50,7 +50,7 @@ public class ExemploList {
 		notas2.add(5.6);
 		System.out.println("Primeira nota da lista sem remove-lá:"+notas2.peek());
 		System.out.println(notas2);
-		System.out.println("Primeira nota da lista sem remove-lá:"+notas2.poll());
+		System.out.println("Primeira nota da lista removendo-á:"+notas2.poll());
 		System.out.println(notas2);
 	}
 }
