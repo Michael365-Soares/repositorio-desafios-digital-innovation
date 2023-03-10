@@ -1,0 +1,16 @@
+***CRIANDO UMA TABLE NO POSTGRESQL
+create table if not exists person(
+	person_id smallint  not null,
+	fname CHARACTER varying(20),
+	lname character varying(20),
+	gender CHAR(1),
+	check(gender in ('M','F')),
+	birth_day date,
+	street character varying(30),
+	city character varying(30),
+	state CHARACTER varying(20),
+	country character VARYING(20),
+	postal_code CHARACTER varying(20),  
+	CONSTRAINT pk_person primary key(person_id)
+);
+
