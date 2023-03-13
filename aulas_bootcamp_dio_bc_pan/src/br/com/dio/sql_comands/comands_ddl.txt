@@ -1,4 +1,5 @@
 ***CRIANDO UMA TABLE NO POSTGRESQL
+
 create table if not exists person(
 	person_id smallint  not null,
 	fname CHARACTER varying(20),
@@ -14,3 +15,12 @@ create table if not exists person(
 	CONSTRAINT pk_person primary key(person_id)
 );
 
+***CRIANDO TABELA FAVORITE_FOOD E SEU RELACIONAMENTO COM A TABELA PERSON
+
+create table favorite_food( 
+	person_id smallint not null,
+	food character varying(20),
+	CONSTRAINT pk_favorite_food primary key(person_id,food),
+	constraint fk_favorite_food_person_id FOREIGN key (person_id)
+	references person(person_id)
+);
