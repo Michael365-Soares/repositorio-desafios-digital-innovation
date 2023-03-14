@@ -68,8 +68,27 @@ create table dependent(
 alter table employee add CONSTRAINT chk_salary_employee
 check(salary >200.0)
 
-SELECT *FROM information_schema.table_constraints where schema_constraint='company_constraints'
+select *from information_schema.table_constraints where constraint_schema='COMPANY'
 
+alter table departament alter column dnumber add generated always as identity
+alter table departament rename constraint departament_dname_key to unique_name_dept
+alter table departament add  check(mgr_start_date<mgr_create_date)
+alter table departament rename constraint departament_check to chk_date_dept
+ALTER table dependent add column age int not null check(age<21)
+
+SELECT *FROM information_schema.columns WHERE table_name = 'employee';
+
+SELECT
+column_name,
+data_type,
+table_catalog,
+table_name,
+ordinal_position,
+is_nullable,
+table_schema
+FROM
+information_schema.columns
+WHERE table_name = 'departament';
 
 
 
