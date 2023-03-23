@@ -1,0 +1,5 @@
+show collections;->apresentando todas as collections
+db.test.insertOne({name:"Michael S"});->inserindo dados na collection
+db.test.find({});->apresentando dados armazenados na collection
+db.test1.insertOne({name:"Soares"})->criando uma collection de forma implícita
+db.createCollection("test",{capped:true,max:2,size:2});->criando uma collection de forma explícita
